@@ -254,6 +254,9 @@ h4{
         left:0;
         
     }
+    .sidebar.hide{
+        left:-110%;
+    }
     .inner-div{
         width:80%;
         background-color: black;

@@ -30,10 +30,16 @@
       $(document).ready(function () {
         $('#icon').click(function () {
           $('.sidebar').toggleClass('show')
+          let b = document.getElementById('sidebar1');
+          b.classList.remove("hide");
         });
       });
   
-  
+       function dm()
+       {
+         let b = document.getElementById('sidebar1');
+         b.className += " hide";
+       }
   
     </script>
   
@@ -54,19 +60,19 @@
     <div class="sidebar" id="sidebar1">
       <h1> Topics </h1>
       <ul class="menu">
-      <li class="btn1 active" onclick="loadQuestion()">Javascript</li>
-      <li class="btn1" onclick="loadQuestion2()">Python</li>
-      <li class="btn1" onclick="loadQuestion3()">C++</li>
-      <li class="btn1" onclick="loadQuestion4()">C</li>
-      <li class="btn1" onclick="loadQuestion5()">Java</li>
-      <li class="btn1" onclick="loadQuestion6()">Networking</li>
-      <li class="btn1" onclick="loadQuestion7()">Html</li>
-      <li class="btn1" onclick="loadQuestion8()">Css</li>
-      <li class="btn1" onclick="loadQuestion9()">Php</li>
-      <li class="btn1" onclick="loadQuestion10()">Reactjs</li>
-      <li class="btn1" onclick="loadQuestion11()">DBMS</li>
-      <li class="btn1" onclick="loadQuestion12()">MongoDB</li>
-      <li class="btn1" onclick="loadQuestion13()">Operating System</li>
+      <li class="btn1 active" onclick="loadQuestion(); dm();">Javascript</li>
+      <li class="btn1" onclick="loadQuestion2(); dm();">Python</li>
+      <li class="btn1" onclick="loadQuestion3(); dm();">C++</li>
+      <li class="btn1" onclick="loadQuestion4(); dm();">C</li>
+      <li class="btn1" onclick="loadQuestion5(); dm();">Java</li>
+      <li class="btn1" onclick="loadQuestion6(); dm();">Networking</li>
+      <li class="btn1" onclick="loadQuestion7(); dm();">Html</li>
+      <li class="btn1" onclick="loadQuestion8(); dm();">Css</li>
+      <li class="btn1" onclick="loadQuestion9(); dm();">Php</li>
+      <li class="btn1" onclick="loadQuestion10(); dm();">Reactjs</li>
+      <li class="btn1" onclick="loadQuestion11(); dm();">DBMS</li>
+      <li class="btn1" onclick="loadQuestion12(); dm();">MongoDB</li>
+      <li class="btn1" onclick="loadQuestion13(); dm();">Operating System</li>
       
   
       </ul>  
